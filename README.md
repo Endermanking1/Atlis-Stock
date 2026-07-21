@@ -8,6 +8,12 @@
 </p>
 
 <p align="center">
+  <a href="https://raw.githubusercontent.com/Endermanking1/Atlis_Stock/main/assets/logo.png">
+    <img src="https://raw.githubusercontent.com/Endermanking1/Atlis_Stock/main/assets/logo.png" alt="Atlis Stock Logo" width="400">
+  </a>
+</p>
+
+<p align="center">
   <em>Automated real-time in-game stock tracking for Discord.</em>
 </p>
 
@@ -15,7 +21,7 @@
 
 ## What it does
 
-This project automatically gathers live in-game market stock and inventory data for games like gag, pvb, and gag 2 directly from Traderie. It processes this data and displays it on an automated, real-time Discord dashboard embed featuring restock countdown timers and item category sorting.
+This project automatically gathers live in-game market stock and inventory data for games like gag, pvb, and gag 2 directly from Traderie. It processes this data and displays it on an automated, rich Discord embed dashboard with real-time price tracking and role ping notifications.
 
 ## Requirements
 
@@ -33,8 +39,8 @@ This project automatically gathers live in-game market stock and inventory data 
 
 ## Project Components
 
-- **Premium Anti-Cloudflare Precise Isolated Component Scraper (`scraper.js`)**: A headless Puppeteer implementation running viewport masks, custom User-Agents, and `AutomationControlled` bypass flags. Evaluation routines are pinned directly to the page `mainFrame` to block detached frame execution exceptions caused by dynamic ad frames shifting during scraping. It parses multipliers (e.g., `4x`) and countdown timers via regex.
-- **Discord Bot & Dashboard System**: Built via Discord.js to host a live, rich-embed stock dashboard. Cross-references scraped text with a pre-configured `targetCatalog` to filter items into designated spaces like Seeds and Gear. Automatically handles live fallback logging when pages shift.
+- **Premium Anti-Cloudflare Precise Isolated Component Scraper (`scraper.js`)**: A headless Puppeteer implementation running viewport masks, custom User-Agents, and `AutomationControlled` bypass features to reliably scrape live item stock from Traderie.
+- **Discord Bot & Dashboard System**: Built via Discord.js to host a live, rich-embed stock dashboard. Cross-references scraped text with a pre-configured `targetCatalog` to filter items into desired game categories.
 
 ## Available Commands
 
